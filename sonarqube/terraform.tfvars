@@ -72,7 +72,7 @@ assign_public_IP_pvt = false
 volume_size          = 29
 
 tg_name                  = "sonar-tg"
-tg_port                  = 9000
+tg_port                  = 80
 tg_protocol              = "HTTP"
 health_check_path        = "/"
 health_check_interval    = 30
@@ -80,7 +80,7 @@ health_check_timeout     = 5
 health_check_threshold   = 2
 unhealth_check_threshold = 2
 health_check_matcher     = 200
-tg_attachment_port       = 80
+tg_attachment_port       = 9000
 lb_name                  = "sonar-LB"
 lb_internal              = false
 lb_tpye                  = "application"
