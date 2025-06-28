@@ -30,7 +30,7 @@ variable "ami_id" {
 }
 variable "key" {
   type        = string
-  default     = "nginx_key"
+  default     = "ansiblekey"
   description = "enter your  key name"
 }
 variable "pub_ec2_type" {
