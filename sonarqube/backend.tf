@@ -1,7 +1,7 @@
-# terraform {
-#   backend "s3" {
-#     bucket = "nginx-tool-buckets"
-#     key    = "nginx.tfstate"
-#     region = "ap-south-1"
-#   }
-# }
+backend "s3" {
+    bucket         = "kawal-sonarqube-tfstate-bucket"
+    key            = "sonarqube/terraform.tfstate"
+    region         = "ap-south-1"
+    dynamodb_table = "terraform-locks"
+    encrypt        = true
+  }
